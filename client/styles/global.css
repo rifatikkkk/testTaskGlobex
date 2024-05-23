@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'ProximanovaNormal';
+    src: url('../public/fonts/proximanova_regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximanovaBold';
+    src: url('../public/fonts/proximanova_bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #262C40;
+    --color-gray: #8189A3;
+    --color-border: #D4DEFE;
+    --color-darken: rgba(188, 195, 208, .5);
+    --wrapper-size: 1121px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,
+input {
+    font-family: "ProximanovaBold", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: "ProximanovaNormal", sans-serif;
+    background-color: var(--color-white);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: var(--wrapper-size);
+    margin: 0 auto;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}

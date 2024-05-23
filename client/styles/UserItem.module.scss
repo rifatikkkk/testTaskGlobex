@@ -1,0 +1,43 @@
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+$color-gray: var(--color-gray);
+$color-border: var(--color-border);
+
+
+.item {
+    width: 100%;
+    display: flex;
+    max-width: 357px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    min-height: 314px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 24px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: auto;
+
+        &_phone,
+        &_mail {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin-right: auto;
+
+            p {
+                font-size: 14px;
+                color: $color-gray;
+            }
+        }
+    }
+
+}
